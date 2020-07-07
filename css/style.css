@@ -1,6 +1,3 @@
-/* #191c1f colore bottoni e titolo*/
-/* #47494c grigio bottone disabilitato */
-
 *{
     box-sizing: border-box;
     margin: 0;
@@ -108,17 +105,18 @@ a {
     color:  #191c1f;
 }
 
-#navbar .container .button {
+#navbar .container button {
     padding: 10px 15px;
     color: #ffffff;
     background-color: #191c1f;
+    border: none;
     border-radius: 10px;
     font-weight: bold;
     font-size: 16px;
     transition: all 0.3s;
 }
 
-#navbar .container .button:hover {
+#navbar .container button:hover {
     cursor: pointer;
     background-color: #47494c;
 }
@@ -167,7 +165,7 @@ a {
 }
 
 #jumbotron .container .info {
-    width: 70%;
+    width: 80%;
     display: flex;
     justify-content: start;
     align-items: center;
@@ -193,8 +191,18 @@ a {
 }
 
 #jumbotron .container .info button {
-   padding: 12px 24px;
+    margin-bottom: 5px;
+   padding: 20px 45px;
+   color: #cccccc;
+   background-color: #47494c;
+   border: none;
+   border-radius: 10px;
+   font-weight: bold;
+    font-size: 18px;
 }
 
+#jumbotron .container .title #open-count {
+    padding-top: 30px;
+}
 
 
