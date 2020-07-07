@@ -113,7 +113,7 @@ header {
     color:  #191c1f;
 }
 
-#navbar .container button {
+#navbar .container #download {
     padding: 10px 15px;
     color: #ffffff;
     background-color: #191c1f;
@@ -124,9 +124,15 @@ header {
     transition: all 0.3s;
 }
 
-#navbar .container button:hover {
+#navbar .container #download:hover {
     cursor: pointer;
     background-color: #47494c;
+}
+
+#navbar .container .ham-menu {
+    display: none;
+    font-size: 30px;
+    padding: 0 20px
 }
 
 #navbar .container #logo .navi .relative {
@@ -263,3 +269,4 @@ header {
 }
 
 
+/* Media Query */
