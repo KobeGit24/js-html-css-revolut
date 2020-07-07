@@ -8,15 +8,8 @@ body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-header {
-    background-color: #f3f4f5;
-    display: flex;
-    justify-content: center;
-}
-
 a {
     text-decoration: none;
-    text-transform: capitalize;
     color: #8b95a9;
 }
 
@@ -24,7 +17,7 @@ a {
     width: 1200px;
 }
 
-.h-container {
+.flex-container {
     display: flex;
     justify-content: space-between;
 }
@@ -33,6 +26,14 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+/* Header */
+
+header {
+    background-color: #f3f4f5;
+    display: flex;
+    justify-content: center;
 }
 
 .h-left,
@@ -44,7 +45,8 @@ a {
 
 .h-left a,
 .h-right a {
-    padding: 20px;
+    padding: 20px;  
+    text-transform: capitalize;
 }
 
 .h-left a {
@@ -63,6 +65,8 @@ a {
     color:  #191c1f;
     font-weight: 500;
 }
+
+/* Navbar */
 
 #navbar {
     display: flex;
@@ -98,7 +102,11 @@ a {
     padding: 0 25px;
     margin-top: 5px;
     font-weight: 400;
-    font-size: 17px;
+    font-size: 17px;   
+}
+
+#navbar .navi li a {
+    padding: 10px 0;   
 }
 
 #navbar .navi li a:hover {
@@ -120,6 +128,55 @@ a {
     cursor: pointer;
     background-color: #47494c;
 }
+
+#navbar .container #logo .navi .relative {
+    position: relative;
+}
+
+#navbar .container #logo .navi .relative .hidden {
+    display: none;
+}
+
+#navbar .container #logo .navi .relative .dropdown {
+    position: absolute;
+    top: 33px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    box-shadow: 5px 5px 5px #cccccc;
+}
+
+#navbar .container #logo .navi .relative>#denaro {
+    width: 200px;
+}
+
+#navbar .container #logo .navi .relative>#investimenti {
+    width: 300px;
+}
+
+#navbar .container #logo .navi .relative>#controllo {
+    width: 176px;
+}
+
+#navbar .container #logo .navi .relative>#altro {
+    width: 245px;
+}
+
+#navbar .container #logo .navi .relative>#plans {
+    width: 123px;
+}
+
+#navbar .container #logo .navi .relative .dropdown ul {
+    list-style: none;
+}
+
+#navbar .container #logo .navi .relative .dropdown ul li {
+    padding: 10px;
+}
+#navbar .container #logo .navi .relative .dropdown ul li:first-of-type {
+    padding-top: 0;
+}
+
+/* Jumbotron */
 
 #jumbotron {
     display: flex;
