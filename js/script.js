@@ -6,19 +6,25 @@ $(document).ready(function(){
         $('.dropdown', this).hide();
     });
 
-    console.log($(window).width()); 
     $(window).resize(function (){
-        if ($(window).width() <= 1199) {
+        console.log($(window).width()); 
+        if ($(window).width() >= 1200) {
+            $('header').show();
+            $('.navi').show();
+            $('#download').show();
+            $('.ham-menu').hide();
+        } else if ($(window).width() <= 1199) {
+            $('header').hide();
+            $('.navi').hide();
+            $('#download').hide();
+            $('.ham-menu').show(); 
+        } else if ($(window).width() <= 992) {
             $('header').hide();
             $('.navi').hide();
             $('#download').hide();
             $('.ham-menu').show();
-            // console.log($(window).width());  
-        } else if ($(window).width() >= 1200) {
-            $('header').show();
-            $('.navi').show();
-            $('#download').show();
-            $('.ham-menu').hide(); 
+            $('.title #open-count').hide();
+            $('.info').hide();
         }
     })  
 });
