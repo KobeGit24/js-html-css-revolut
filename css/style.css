@@ -133,7 +133,11 @@ header {
 #navbar .container .ham-menu {
     display: none;
     font-size: 30px;
-    padding: 0 20px
+    padding: 0 20px;
+}
+
+#navbar .container .ham-menu>a {
+    color: #191c1f;
 }
 
 #navbar .container #logo .navi .relative {
