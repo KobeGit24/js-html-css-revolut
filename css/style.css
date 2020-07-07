@@ -15,6 +15,7 @@ a {
 
 .container {
     width: 1200px;
+    padding: 0 8px;
 }
 
 .flex-container {
@@ -113,7 +114,7 @@ header {
     color:  #191c1f;
 }
 
-#navbar .container #download {
+.download {
     padding: 10px 15px;
     color: #ffffff;
     background-color: #191c1f;
@@ -124,7 +125,7 @@ header {
     transition: all 0.3s;
 }
 
-#navbar .container #download:hover {
+.download:hover {
     cursor: pointer;
     background-color: #47494c;
 }
@@ -193,11 +194,9 @@ header {
 #jumbotron .image,
 #jumbotron .title {
     width: 100%;
-    height: 100%;
 }
 
 #jumbotron .container .title {
-    height: 100%;
     padding-right: 60px;
     display: flex;
     flex-direction: column;
@@ -268,5 +267,83 @@ header {
     padding-top: 30px;
 }
 
+.btn-fix {
+    width: 100%;
+    padding: 20px 0;
+    position: fixed;
+    bottom: 0;
+    background-color: #ffffff;
+    z-index: 99;
+    text-align: center;
+    display: none;
+}
+
+.btn-fix>button {
+    padding: 12px 18px;
+    font-size: 17px;
+}
 
 /* Media Query */
+
+/* Breakpoint MD */
+@media all and (max-width: 992px) {
+    header,
+    #navbar .container .download,
+    #jumbotron .container .title>.info,
+    #navbar .container #logo >.navi,
+    .title>#open-count {
+        display: none;
+    }
+
+    #navbar .container .ham-menu {
+        display: block;
+    }
+
+    #logo > a {
+        padding-left: 20px;
+    }
+
+    .j-container {
+     flex-wrap: wrap;   
+    }
+
+    #jumbotron .image,
+    #jumbotron .title {
+    width: 100%;
+    text-align: center;
+    }
+
+    #jumbotron .container .title {
+    padding-right: 0;
+    margin-top: 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    }
+
+    #jumbotron .image img{
+    width: 50%;
+    }
+
+    
+    #jumbotron .container .title h1 {
+    font-size: 48px;
+    padding-bottom: 40px;
+    }
+
+    .btn-fix {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+/* /* BREAKPOINT S
+@media all and (max-width: 768px) {
+
+}
+
+/* BREAKPOINT XS */
+
+/* @media all and (max-width: 684px) { */
+
+/* }   */
