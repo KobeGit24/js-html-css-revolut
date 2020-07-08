@@ -5,4 +5,9 @@ $(document).ready(function(){
     $('.relative').mouseleave(function (){
         $('.dropdown', this).hide();
     });
+
+    $('#ham-open>a').click(function(){
+        $(this).hide();
+        $('#ham-menu').show();
+    });
 });

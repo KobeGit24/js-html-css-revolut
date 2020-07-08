@@ -31,7 +31,7 @@ a {
 
 /* Header */
 
-header {
+.header {
     background-color: #f3f4f5;
     display: flex;
     justify-content: center;
@@ -130,16 +130,6 @@ header {
     background-color: #47494c;
 }
 
-#navbar .container .ham-menu {
-    display: none;
-    font-size: 30px;
-    padding: 0 20px;
-}
-
-#navbar .container .ham-menu>a {
-    color: #191c1f;
-}
-
 #navbar .container #logo .navi .relative {
     position: relative;
 }
@@ -185,6 +175,79 @@ header {
 }
 #navbar .container #logo .navi .relative .dropdown ul li:first-of-type {
     padding-top: 0;
+}
+
+/* HAMBURGER-MENU ! */
+
+#navbar .container .ham-icon {
+    display: none;
+    font-size: 30px;
+    padding: 0 20px;
+}
+
+#navbar .container .ham-icon>a {
+    color: #191c1f;
+}
+
+#ham-menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+    min-width: 100vw;
+    min-height: 100vh;
+    background: #ffffff;
+    z-index: 90;
+}
+
+#ham-menu>.header {
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 20px 20px 40px;
+}
+
+#ham-menu .header>.ham-close {
+    padding: 0 20px;
+    color: #191c1f;
+    font-size: 24px;
+}
+
+#ham-menu #ham-main>.ham-list>.ham-navi {
+    list-style: none;
+    width: 100%;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#ham-menu #ham-main>.ham-list>.ham-navi::after {
+    content: '';
+    width: 100%;
+    line-height: 1px;
+    border: 1px solid #8b95a9;
+    margin: 30px 50px 0 0;
+}
+
+#ham-menu #ham-main>.ham-list>.ham-navi li {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 27px 0;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+#ham-menu #ham-main>.ham-list>.ham-navi li:hover a {
+    color: #191c1f;
+}
+
+#ham-menu #ham-main>.ham-list>.ham-navi li:hover {
+    cursor: pointer;
+}
+
+#ham-menu #ham-main>.ham-list>.ham-navi li:first-of-type {
+    padding-top:0;
 }
 
 /* Jumbotron */
@@ -291,7 +354,7 @@ header {
 
 /* Breakpoint MD */
 @media all and (max-width: 992px) {
-    header,
+    #header,
     #navbar .container .download,
     #jumbotron .container .title>.info,
     #navbar .container #logo >.navi,
@@ -299,7 +362,7 @@ header {
         display: none;
     }
 
-    #navbar .container .ham-menu {
+    #navbar .container #ham-open {
         display: block;
     }
 
