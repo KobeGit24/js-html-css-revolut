@@ -193,7 +193,7 @@ a {
     position: absolute;
     top: 0;
     left: 0;
-    /* display: none; */
+    display: none;
     min-width: 100vw;
     min-height: 100vh;
     background: #ffffff;
@@ -221,7 +221,7 @@ a {
     align-items: flex-start;
 }
 
-#ham-menu #ham-main>.ham-list>.ham-navi::after {
+#ham-menu #ham-main>.ham-list>#first-ham-navi::after {
     content: '';
     width: 100%;
     line-height: 1px;
@@ -233,7 +233,7 @@ a {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    padding: 27px 0;
+    padding: 18px 0;
     font-weight: 400;
     font-size: 18px;
 }
@@ -401,6 +401,10 @@ a {
     .btn-fix {
         display: flex;
         justify-content: center;
+    }
+
+    #ham-menu.active {
+        display: block;
     }
 }
 

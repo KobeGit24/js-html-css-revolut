@@ -8,6 +8,11 @@ $(document).ready(function(){
 
     $('#ham-open>a').click(function(){
         // $(this).hide();
-        $('#ham-menu').show();
+        $('#ham-menu').addClass('active');
+    });
+
+    $('.ham-close>a').click(function(){
+        // $(this).hide();
+        $('#ham-menu').removeClass('active');
     });
 });
