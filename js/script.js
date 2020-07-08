@@ -27,8 +27,6 @@ $(document).ready(function(){
 
 function dropdownSlide(mainSlide,hiddenSlide) {
     mainSlide.click(function(){
-        hiddenSlide.slideToggle();
+        hiddenSlide.slideToggle(); 
     });
 }
-
-    // $('#ham-hidden-denaro a i').css('transform', 'rota(180deg)');
