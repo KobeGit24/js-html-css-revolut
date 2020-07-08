@@ -34,4 +34,8 @@ $(document).ready(function(){
     $('#ham-hidden-plans').click(function(){
         $('#ham-plans-list').slideToggle();
     });
+
+    $('#ham-hidden-azienda').click(function(){
+        $('#ham-azienda-list').slideToggle();
+    });
 });
