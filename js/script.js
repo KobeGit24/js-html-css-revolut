@@ -7,12 +7,31 @@ $(document).ready(function(){
     });
 
     $('#ham-open>a').click(function(){
-        // $(this).hide();
         $('#ham-menu').addClass('active');
     });
 
     $('.ham-close>a').click(function(){
-        // $(this).hide();
         $('#ham-menu').removeClass('active');
+    });
+
+    $('#ham-hidden-denaro').click(function(){
+        $('#ham-denaro-list').slideToggle();
+        // $('#ham-hidden-denaro a i').css('transform', 'rotate(180deg)');
+    });
+
+    $('#ham-hidden-investimenti').click(function(){
+        $('#ham-investimenti-list').slideToggle();
+    });
+
+    $('#ham-hidden-controllo').click(function(){
+        $('#ham-controllo-list').slideToggle();
+    });
+
+    $('#ham-hidden-altro').click(function(){
+        $('#ham-altro-list').slideToggle();
+    });
+
+    $('#ham-hidden-plans').click(function(){
+        $('#ham-plans-list').slideToggle();
     });
 });

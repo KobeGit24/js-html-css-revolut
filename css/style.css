@@ -193,7 +193,7 @@ a {
     position: absolute;
     top: 0;
     left: 0;
-    display: none;
+    /* display: none; */
     min-width: 100vw;
     min-height: 100vh;
     background: #ffffff;
@@ -203,13 +203,13 @@ a {
 #ham-menu>.header {
     justify-content: space-between;
     align-items: center;
-    padding: 20px 20px 20px 40px;
+    padding: 18px 20px 18px 40px;
 }
 
 #ham-menu .header>.ham-close {
     padding: 0 20px;
     color: #191c1f;
-    font-size: 24px;
+    font-size: 22px;
 }
 
 #ham-menu #ham-main>.ham-list>.ham-navi {
@@ -233,7 +233,7 @@ a {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    padding: 18px 0;
+    padding: 15px 0;
     font-weight: 400;
     font-size: 18px;
 }
@@ -248,6 +248,23 @@ a {
 
 #ham-menu #ham-main>.ham-list>.ham-navi li:first-of-type {
     padding-top:0;
+}
+
+#ham-menu #ham-main>.ham-list>.ham-navi li a i {
+    font-size: 12px;
+}
+
+#ham-menu #ham-main>.ham-list>.ham-navi .ham-hidden-list {
+    width: 100%;
+    padding-top: 15px;
+    list-style: none;
+    background-color: #ffffff;
+    display: none;
+}
+
+#ham-menu #ham-main>.ham-list>.ham-navi li .ham-hidden-list li {
+    padding: 10px 0;
+    font-size: 17px;
 }
 
 /* Jumbotron */
