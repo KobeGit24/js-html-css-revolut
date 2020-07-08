@@ -7,7 +7,7 @@ $(document).ready(function(){
     });
 
     $('#ham-open>a').click(function(){
-        $(this).hide();
+        // $(this).hide();
         $('#ham-menu').show();
     });
 });

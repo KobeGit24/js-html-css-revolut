@@ -193,7 +193,7 @@ a {
     position: absolute;
     top: 0;
     left: 0;
-    display: none;
+    /* display: none; */
     min-width: 100vw;
     min-height: 100vh;
     background: #ffffff;
