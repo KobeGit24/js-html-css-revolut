@@ -254,6 +254,10 @@ a {
     font-size: 12px;
 }
 
+#ham-menu #ham-main>.ham-list>.ham-navi li a i.rotate {
+    transform: rotate(180deg);
+}
+
 #ham-menu #ham-main>.ham-list>.ham-navi:last-of-type {
     padding-top: 0;
 }

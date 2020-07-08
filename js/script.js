@@ -14,19 +14,23 @@ $(document).ready(function(){
         $('#ham-menu').removeClass('active');
     });
 
-    dropdownSlide($('#ham-hidden-denaro'),$('#ham-denaro-list'));
-    dropdownSlide($('#ham-hidden-investimenti'),$('#ham-investimenti-list'));
-    dropdownSlide($('#ham-hidden-controllo'),$('#ham-controllo-list'));
-    dropdownSlide($('#ham-hidden-altro'),$('#ham-altro-list'));
-    dropdownSlide($('#ham-hidden-plans'),$('#ham-plans-list'));
-    dropdownSlide($('#ham-hidden-azienda'),$('#ham-azienda-list'));
-    dropdownSlide($('#ham-hidden-aiuto'),$('#ham-aiuto-list'));
-    dropdownSlide($('#ham-hidden-seguici'),$('#ham-seguici-list'));
+    dropdownSlide($('#ham-hidden-denaro'),$('#ham-denaro-list'),$('#ham-main>.ham-list>.ham-navi li a #denaro-icon'));
+    dropdownSlide($('#ham-hidden-investimenti'),$('#ham-investimenti-list'),$('#ham-main>.ham-list>.ham-navi li a #investimenti-icon'));
+    dropdownSlide($('#ham-hidden-controllo'),$('#ham-controllo-list'),$('#ham-main>.ham-list>.ham-navi li a #controllo-icon'));
+    dropdownSlide($('#ham-hidden-altro'),$('#ham-altro-list'),$('#ham-main>.ham-list>.ham-navi li a #altro-icon'));
+    dropdownSlide($('#ham-hidden-plans'),$('#ham-plans-list'),$('#ham-main>.ham-list>.ham-navi li a #plans-icon'));
+    dropdownSlide($('#ham-hidden-azienda'),$('#ham-azienda-list'),$('#ham-main>.ham-list>.ham-navi li a #azienda-icon'));
+    dropdownSlide($('#ham-hidden-aiuto'),$('#ham-aiuto-list'),$('#ham-main>.ham-list>.ham-navi li a #aiuto-icon'));
+    dropdownSlide($('#ham-hidden-seguici'),$('#ham-seguici-list'),$('#ham-main>.ham-list>.ham-navi li a #seguici-icon'));
+})
 
-});
-
-function dropdownSlide(mainSlide,hiddenSlide) {
+function dropdownSlide(mainSlide,hiddenSlide,arrow) {
     mainSlide.click(function(){
-        hiddenSlide.slideToggle(); 
+        if (arrow.hasClass('rotate')==false) {
+            arrow.addClass('rotate'); 
+        } else {
+            arrow.removeClass('rotate');
+        }
+        hiddenSlide.slideToggle();   
     });
 }
