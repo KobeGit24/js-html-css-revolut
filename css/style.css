@@ -193,7 +193,7 @@ a {
     position: absolute;
     top: 0;
     left: 0;
-    /* display: none; */
+    display: none;
     min-width: 100vw;
     min-height: calc(100vh - 90px);
     background: #ffffff;
@@ -252,6 +252,10 @@ a {
 
 #ham-menu #ham-main>.ham-list>.ham-navi li a i {
     font-size: 12px;
+}
+
+#ham-menu #ham-main>.ham-list>.ham-navi:last-of-type {
+    padding-top: 0;
 }
 
 #ham-menu #ham-main>.ham-list>.ham-navi .ham-hidden-list {

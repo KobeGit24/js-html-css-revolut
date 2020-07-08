@@ -10,32 +10,41 @@ $(document).ready(function(){
         $('#ham-menu').addClass('active');
     });
 
-    $('.ham-close>a').click(function(){
+    $('.header>.ham-close>a').click(function(){
         $('#ham-menu').removeClass('active');
     });
 
-    $('#ham-hidden-denaro').click(function(){
-        $('#ham-denaro-list').slideToggle();
-        // $('#ham-hidden-denaro a i').css('transform', 'rotate(180deg)');
-    });
+    var denaroId = $('#ham-hidden-denaro');
+    var denaroList = $('#ham-denaro-list');
+    var investimentiId = $('#ham-hidden-investimenti');
+    var investimentiList = $('#ham-investimenti-list');
+    var controlloId = $('#ham-hidden-controllo');
+    var controlloList = $('#ham-controllo-list');
+    var altroId = $('#ham-hidden-altro');
+    var altroList = $('#ham-altro-list');
+    var plansId = $('#ham-hidden-plans');
+    var plansList = $('#ham-plans-list');
+    var aziendaId =  $('#ham-hidden-azienda');
+    var aziendaList =  $('#ham-azienda-list');
+    var aiutoId = $('#ham-hidden-aiuto');
+    var aiutoList = $('#ham-aiuto-list');
+    var seguiciId =   $('#ham-hidden-seguici');
+    var seguiciList = $('#ham-seguici-list');
 
-    $('#ham-hidden-investimenti').click(function(){
-        $('#ham-investimenti-list').slideToggle();
-    });
-
-    $('#ham-hidden-controllo').click(function(){
-        $('#ham-controllo-list').slideToggle();
-    });
-
-    $('#ham-hidden-altro').click(function(){
-        $('#ham-altro-list').slideToggle();
-    });
-
-    $('#ham-hidden-plans').click(function(){
-        $('#ham-plans-list').slideToggle();
-    });
-
-    $('#ham-hidden-azienda').click(function(){
-        $('#ham-azienda-list').slideToggle();
-    });
+    dropdownSlide(denaroId,denaroList);
+    dropdownSlide(investimentiId,investimentiList);
+    dropdownSlide(controlloId,controlloList);
+    dropdownSlide(altroId,altroList);
+    dropdownSlide(plansId,plansList);
+    dropdownSlide(aziendaId,aziendaList);
+    dropdownSlide(aiutoId,aiutoList);
+    dropdownSlide(seguiciId,seguiciList);
 });
+
+function dropdownSlide(x,y) {
+    x.click(function(){
+        y.slideToggle();
+    });
+}
+
+    // $('#ham-hidden-denaro a i').css('transform', 'rota(180deg)');
