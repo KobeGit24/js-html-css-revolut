@@ -190,11 +190,11 @@ a {
 }
 
 #ham-menu {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     display: none;
-    min-width: 100vw;
+    min-width: 100%;
     min-height: calc(100vh - 90px);
     background: #ffffff;
     z-index: 90;
